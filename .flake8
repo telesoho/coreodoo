@@ -1,7 +1,7 @@
 [flake8]
-max-line-length = 188
+max-line-length = 256
 max-complexity = 16
-exclude = .git,__pycache__,build,venders
+exclude =.git,__pycache__,build,venders,venv,tests
 # B = bugbear
 # B9 = bugbear opinionated (incl line length)
 select = C,E,F,W,B,B9
@@ -10,6 +10,6 @@ select = C,E,F,W,B,B9
 # W503: line break before binary operator (black behaviour)
 # B902: Invalid first argument (none) used for instance method. Use the canonical first argument name in methods, i.e. self
 # B950: max line check
-ignore = E203,E501,W503
+ignore = E203,W503,W504,C901,E731,E501
 per-file-ignores=
-    __init__.py:F401,E402
+    __init__.py:F401,E402,F403
