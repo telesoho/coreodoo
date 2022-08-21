@@ -185,7 +185,8 @@ class configmanager(object):
             "--load",
             dest="server_wide_modules",
             help="Comma-separated list of server-wide modules.",
-            my_default="base,web",
+            # my_default="base,web",
+            my_default="base",
         )
 
         group.add_option(
@@ -826,7 +827,8 @@ class configmanager(object):
             self.options["test_tags"] = None
         # and the server_wide_modules
         if self.options["server_wide_modules"] in ("", "None", "False"):
-            self.options["server_wide_modules"] = "base,web"
+            # self.options["server_wide_modules"] = "base,web"
+            self.options["server_wide_modules"] = "base"
 
         # if defined do not take the configfile value even if the defined value is None
         keys = [
