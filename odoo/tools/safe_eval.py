@@ -31,7 +31,7 @@ import odoo
 
 unsafe_eval = eval
 
-__all__ = ["test_expr", "safe_eval", "const_eval"]
+__all__ = ["test_expr", "safe_eval", "const_eval", "pytz"]
 
 # The time module is usually already provided in the safe_eval environment
 # but some code, e.g. datetime.datetime.now() (Windows/Python 2.5.2, bug
