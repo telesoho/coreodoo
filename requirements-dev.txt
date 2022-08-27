@@ -1,0 +1,7 @@
+pre-commit
+flake8
+black
+autoflake
+watchdog==0.10.0; python_version <= '2.6'
+watchdog==1.0.0; python_version <= '3.5'
+watchdog==2.1.9; python_version > '3.5'
