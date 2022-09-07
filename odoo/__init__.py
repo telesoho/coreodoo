@@ -117,14 +117,16 @@ SUPERUSER_ID = 1
 # from . import addons
 # from . import conf
 # from . import loglevels
-# from . import modules
-# from . import netsvc
+from . import modules
+from . import netsvc
+
 # from . import osv
 from . import release
 
-# from . import service
+from . import service
+
 # from . import sql_db
-# from . import tools
+from . import tools
 
 # ----------------------------------------------------------
 # Model classes, fields, api decorators, and translations

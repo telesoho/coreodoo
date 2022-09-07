@@ -1,3 +1,16 @@
 PyPDF2==1.26.0
 psycopg2==2.7.7; sys_platform != 'win32' and python_version < '3.8'
 psycopg2==2.8.6; sys_platform == 'win32' or python_version >= '3.8'
+passlib==1.7.3 # min version = 1.7.2 (Focal with security backports)
+decorator==4.4.2
+Werkzeug==0.16.1 ; python_version <= '3.9'
+Werkzeug==2.0.2 ; python_version > '3.9'  # (Jammy)
+polib==1.1.1
+Babel>=2.10.2  # min version = 2.6.0 (Focal with security backports)
+lxml==4.6.5 # min version = 4.5.0 (Focal - with security backports)
+MarkupSafe>=2.1.1
+python-dateutil>=2.7.3
+idna==2.8
+Pillow==9.0.1  # min version = 7.0.0 (Focal with security backports)
+psutil==5.6.7 # min version = 5.5.1 (Focal with security backports)
+requests==2.25.1 # versions < 2.25 aren't compatible w/ urllib3 1.26. Bullseye = 2.25.1. min version = 2.22.0 (Focal)
