@@ -28,3 +28,4 @@ pyOpenSSL==21.0.0
 docutils==0.16
 num2words==0.5.6
 Jinja2==2.11.3 # min version = 2.10.1 (Focal - with security backports)
+pytz==2019.3

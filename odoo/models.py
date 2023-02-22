@@ -1409,8 +1409,7 @@ class BaseModel(metaclass=MetaModel):
         # m2o fields can't be on multiple lines so exclude them from the
         # is_relational field rows filter, but special-case it later on to
         # be handled with relational fields (as it can have subfields)
-        def is_relational(field):
-            fields[field].relational
+        is_relational = lambda field: fields[field].relational
 
         get_o2m_values = itemgetter_tuple(
             [

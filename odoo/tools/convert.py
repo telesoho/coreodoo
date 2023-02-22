@@ -20,7 +20,6 @@ import warnings
 from datetime import datetime, timedelta
 from dateutil.relativedelta import relativedelta
 
-import pytz
 from lxml import etree, builder
 
 try:
@@ -35,7 +34,7 @@ from .misc import file_open, unquote, SKIPPED_ELEMENT_TYPES
 from .translate import _
 from odoo import SUPERUSER_ID
 from odoo.exceptions import ValidationError
-from .safe_eval import safe_eval as s_eval, time
+from .safe_eval import safe_eval as s_eval, time, pytz
 
 _logger = logging.getLogger(__name__)
 
